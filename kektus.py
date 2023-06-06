@@ -554,10 +554,7 @@ class Frame1(wx.Frame):
             print "%s - %s"%(cas,text)
 
 if __name__ == '__main__':
-    if "-v" in sys.argv:
-        verbose=True
-    else:
-        verbose=False
+    verbose = "-v" in sys.argv
     app = wx.PySimpleApp()
     frame = create(None, verbose)
     frame.Show()
